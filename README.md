@@ -14,6 +14,7 @@ Example
 ```
 Field optional configuration value:
 - spotify_resource: `Spotify URI` or `Http Link`
+
   For example
   ```
   # Use spotify URI
