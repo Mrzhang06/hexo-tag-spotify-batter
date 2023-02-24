@@ -5,7 +5,7 @@ function getUrl(url) {
 }
 
 function getSize(args) { 
-  let type = args[1] || 'music'；
+  let type = args[1] || 'music';
   let size = args[2] || 'compact';
 
   if(type == 'music' && size == 'large' ) {
