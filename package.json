@@ -1,0 +1,33 @@
+{
+  "name": "hexo-tag-spotify-batter",
+  "version": "1.0.0",
+  "description": "A Hexo tag for embedding spotify in article",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Mrzhang06",
+    "email": "zhangbiaodemail@gmail.com",
+    "url": "https://blog.geektime.club"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mrzhang06/hexo-tag-spotify-batter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mrzhang06/hexo-tag-spotify-batter/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/Mrzhang06/hexo-tag-spotify-batter/blob/e5cf7be9e3b3938b760910f6f1bf47b166bf4f92/LICENSE"
+    }
+  ],
+  "keywords": [
+    "hexo",
+    "spotify",
+    "tag",
+    "widget"
+  ]
+}
