@@ -4,31 +4,30 @@ function getUrl(url) {
   return `https://open.spotify.com/embed/${type}/${key}`;
 }
 
-function getSize(type, size) { 
-  let type = type || 'music'；
-  let size = size || 'compact';
+function getSize(args) { 
+  let type = args[1] || 'music'；
+  let size = args[2] || 'compact';
 
   if(type == 'music' && size == 'large' ) {
-	size = '100%x152'
+	size = '100%x160'
   } else if(type == 'music' && size == 'compact' ) {
-	size = '100%x80'
+	size = '100%x86'
   } else if(type == 'podcast' && size == 'large' ) {
-	size = '100%x232'
+	size = '100%x240'
   } else if(type == 'podcast' && size == 'compact' ) {
-	size = '100%x152'
+	size = '100%x160'
   } else if(type == 'playlist' && size == 'large' ) {
-	size = '100%x380'
+	size = '100%x388'
   } else if(type == 'playlist' && size == 'compact' ) {
-	size = '100%x152'
+	size = '100%x160'
   }
   
   return size.split('x');
 }
 
 function renderSpotify(args) {
-  const config = hexo.config.spotify || {};
   const url = getUrl(args[0]);
-  const [width, height] = getSize(args[1], args[2]);
+  const [width, height] = getSize(args);
 
   return `<iframe src="${url}" width="${width}" height="${height}" frameborder="0" allowtransparency="allowtransparency" allow="encrypted-media"></iframe>`;
 }
