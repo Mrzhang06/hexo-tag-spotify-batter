@@ -13,7 +13,7 @@ Example
 {% spotify [spotify_resource] [type] [size] %}
 ```
 Field optional configuration value:
-- spotify_resource: `Spotify URI` or `Http Link`
+- **spotify_resource**: `Spotify URI` or `Http Link`
 
   For example
   ```
@@ -22,5 +22,5 @@ Field optional configuration value:
   # Use http link
   {% spotify https://open.spotify.com/track/6Axm4pFDMEy2auiDldc1Gj?si=e5482b8fa0464bdf music large %}
   ```
-- type: optional fields, allow values:`music`, `podcast`, `playlist`, default `misic`
-- size: optional fields, allow values:`large`, `compact`, default `compact`
+- **type**: optional fields, allow values:`music`, `podcast`, `playlist`, default `misic`
+- **size**: optional fields, allow values:`large`, `compact`, default `compact`
