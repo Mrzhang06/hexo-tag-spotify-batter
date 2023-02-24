@@ -10,7 +10,7 @@ npm install hexo-tag-spotify-batter --save
 Add the tag markup to a post with the url of the content you want to embed.
 Example
 ```
-{% spotify [spotify_resource] [type] [size]  %}
+{% spotify [spotify_resource] [type] [size] %}
 ```
 Field optional configuration value:
 - spotify_resource: `Spotify URI` or `Http Link`
